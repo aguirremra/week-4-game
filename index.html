@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Star Wars</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
+</head>
+<body>
+  <!-- First Row - Header -->
+<div class="header col-md-12 text-left">
+    <h1>Star Wars RPG!</h1>
+</div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Second Row -->          
+            <div id="characters">
+                <div id="luke" class="character col-md-3 text-center" data-name="obi" data-hp="120">
+                    <div class="caption">Luke Skywalker</div>
+                    <div class="charpic"><img class="available img img-fluid"src="assets/images/luke.jpeg" alt="Luke"></div>
+                    <div class="caption hp"></div>
+                </div>
+                <div id="obi" class="character col-md-3 text-center">
+                        <div class="caption">Obi-Wan Kenobi</div>
+                        <div class="charpic"><img class="available img img-fluid"src="assets/images/obi.jpeg" alt="Obi"></div>
+                        <div class="caption hp">120</div>
+                </div>                
+                <div id="sid" class="character col-md-3 text-center">
+                        <div class="caption">Darth Sidious</div>
+                        <div class="charpic"><img class="available img img-fluid"src="assets/images/sid.jpeg" alt="Sid"></div>
+                        <div class="caption hp">120</div>
+                </div>
+                <div id="maul" class="character col-md-3 text-center">
+                        <div class="caption">Darth Maul</div>
+                        <div class="charpic"><img class="available img img-fluid"src="assets/images/maul.jpeg" alt="Maul"></div>
+                        <div class="caption hp">120</div>
+                </div>
+            </div>
+        </div>        
+      </div>
+    <!-- Third Row -->
+      <div class="row">
+        <div class="character-section col-md-12">
+            <p>Your character</p>
+            <div id="selected-character">
+            </div>
+        </div>        
+        </div>
+        <div class="row">
+            <div class="enemy-section col-md-12">
+                <!-- Third Row -->
+                <p>Available Enemies to fight</p>
+            </div>        
+        </div>        
+        <div class="row">
+            <div class="fight-section col-md-12">
+                <!-- Third Row -->
+                <p>Fight Section</p>
+                <button type="button" class="btn btn-primary btn-attack">Attack</button>
+            </div>        
+        </div>
+        <div class="row">
+            <div class="opponent-section col-md-12">
+                <!-- Third Row -->
+                <div id="opponent">
+                    <p>Opponent</p>
+                </div>
+            </div>        
+        </div>
+        <div class="row">
+            <div id="score-section col-md-12">
+                <!-- Third Row -->
+                <p id="message"></p>
+            </div>        
+        </div>                                  
+    </div>
+  </main>
+  <!-- Last Row - Footer -->
+  <footer class="footer"></footer>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
